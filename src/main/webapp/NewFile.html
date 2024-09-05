@@ -5,6 +5,28 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Hello World...
+	Áö±Ý ´ã¹è¸¦ ÇÇ¼Ì³ª¿ä?
+	<input type="radio" name="tabako" value="1" onclick="clickyes()">¿¹
+	<input type="radio" name="tabako" value="2" onclick="clickno()">¾Æ´Ï¿À
+	
+	<div id="nanko" style="display:none">
+		ù¼ËÁýåª¤ªÞª·ª¿ª«£¿
+		<input type="radio" name="suzi" value="1">
+		<input type="radio" name="suzi" value="2">
+		<input type="radio" name="suzi" value="3">
+		<input type="radio" name="suzi" value="4">
+		<input type="radio" name="suzi" value="5">
+	</div>
 </body>
 </html>
+<script>
+	function clickyes() {
+		alert("good");
+	}
+	function clickno() {
+		document.getElementById("nanko").style.display = "block"
+		alert("2");
+	}
+	//document.querySelector('input[name="tabako"]:checked').value;
+	
+</script>
