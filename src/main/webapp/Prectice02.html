@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>자바스크립트 연습</title>
+</head>
+<body>
+	
+	클로저 연습
+</body>
+</html>
+<script>
+	const cal = (function() {
+		let name1 = "김";
+		let name2 = "이";
+		
+		return {
+			getName(){
+				return name1;
+			},
+			getName2(){
+				return name2;
+			}
+		}
+	})();
+	//cal.getName();
+	console.log(cal.getName());
+</script>
